@@ -255,13 +255,12 @@ var collection = function ( array, opts ) {
 				result = store;
 			}
 			
-			if ( limit || page ) {
-				
+			if ( limit ) {
+				result = result.slice( limit * ( page - 1 ), limit * page )
 			}
 			
 			return result;
 		}
-		
 		
 		return {
 			data: array,
