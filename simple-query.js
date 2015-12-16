@@ -274,6 +274,7 @@ var collection = function ( array, opts ) {
 			
 				return this;
 			},
+			// findOne is deprecated :-p
 			findOne: function ( query, opts, callback ) {
 				var result;
 				
@@ -288,12 +289,26 @@ var collection = function ( array, opts ) {
 			
 				return this;
 			},
+			// findOneAndUpdate(), findOneAndReplace(), findOneAndDelete()
 			count: function ( query, opts, callback ) {
 				
 			},
+			// insert is deprecated
 			insert: function ( data, opts, callback ) {
 				
 			}
+			// insertMany(), insertOne()
+			// drop()
+			// deleteMany(), deleteOne()
+			// distinct()
+			// group()
+			// mapReduce()
+			// updateOne(), updateMany(), bulkWrite()
+			
+			// Should a cursor be returned?
+			// cursor would be the handling of queryStore operations
+			// It would handle the query itself
+			// count(), filter(), forEach(), hasNext(), limit(), map(), max(), maxScan(), min(), next(), project(), skip(), sort(), toArray(), 
 		}
 	};
 	
