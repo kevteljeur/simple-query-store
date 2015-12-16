@@ -64,10 +64,8 @@ var collection = function ( array, opts ) {
 			}
 			
 			return result;
-		},
+		};
 
-		
-		
 		logicalOps = {
 			$and: function ( expression, document ) {
 				var result = false;
