@@ -176,6 +176,7 @@ var collection = function ( array, opts ) {
 					return false;
 				}
 			},
+			// TODO: RegEx test implementation
 			$regex: function ( documentValue, testValue, options ) {
 				
 			}
